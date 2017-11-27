@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChelseaHotel_ManagementSystem</RootNamespace>
+    <AssemblyName>ChelseaHotel_ManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBooking.Designer.cs">
+      <DependentUpon>addBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addCustomerToBannedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCustomerToBannedList.Designer.cs">
+      <DependentUpon>addCustomerToBannedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addEmployee.Designer.cs">
+      <DependentUpon>addEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addItemToInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addItemToInventory.Designer.cs">
+      <DependentUpon>addItemToInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRoom.Designer.cs">
+      <DependentUpon>addRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoomToHousekeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoomToHousekeeping.Designer.cs">
+      <DependentUpon>AddRoomToHousekeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStaff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addStaff.resx</DependentUpon>
+    </Compile>
+    <Compile Include="addSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSupplier.Designer.cs">
+      <DependentUpon>addSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="billCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billCustomer.Designer.cs">
+      <DependentUpon>billCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingList.Designer.cs">
+      <DependentUpon>BookingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashUp.Designer.cs">
+      <DependentUpon>cashUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeRoomPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeRoomPrice.Designer.cs">
+      <DependentUpon>changeRoomPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkIn.Designer.cs">
+      <DependentUpon>checkIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkOut.Designer.cs">
+      <DependentUpon>checkOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBackup.Designer.cs">
+      <DependentUpon>addBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addBreakfastInBedOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBreakfastInBedOrder.Designer.cs">
+      <DependentUpon>addBreakfastInBedOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDish.Designer.cs">
+      <DependentUpon>addDish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addSpecialOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSpecialOffer.Designer.cs">
+      <DependentUpon>addSpecialOffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStockOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStockOrder.Designer.cs">
+      <DependentUpon>addStockOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeUser.Designer.cs">
+      <DependentUpon>removeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateInventory.Designer.cs">
+      <DependentUpon>updateInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewEmployeeDetails.Designer.cs">
+      <DependentUpon>viewEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewListOfAvailableRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewListOfAvailableRooms.Designer.cs">
+      <DependentUpon>viewListOfAvailableRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editStockOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editStockOrder.Designer.cs">
+      <DependentUpon>editStockOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editSupplier.Designer.cs">
+      <DependentUpon>editSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editUser.Designer.cs">
+      <DependentUpon>editUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getReport.Designer.cs">
+      <DependentUpon>getReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeftMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeftMenu.Designer.cs">
+      <DependentUpon>LeftMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainContainer.Designer.cs">
+      <DependentUpon>mainContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRooms.Designer.cs">
+      <DependentUpon>ManageRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStock.Designer.cs">
+      <DependentUpon>ManageStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSuppliers.Designer.cs">
+      <DependentUpon>ManageSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardGeneralManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardGeneralManager.Designer.cs">
+      <DependentUpon>DashboardGeneralManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editCancelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCancelBooking.Designer.cs">
+      <DependentUpon>editCancelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editDeleteMenuItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editDeleteMenuItem.Designer.cs">
+      <DependentUpon>editDeleteMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyEmplyeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyEmplyeeDetails.Designer.cs">
+      <DependentUpon>ModifyEmplyeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintStokOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintStokOrder.Designer.cs">
+      <DependentUpon>PrintStokOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="receiveOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receiveOrder.Designer.cs">
+      <DependentUpon>receiveOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardReceptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardReceptionist.Designer.cs">
+      <DependentUpon>DashboardReceptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeBackup.Designer.cs">
+      <DependentUpon>removeBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardKitchenManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardKitchenManager.Designer.cs">
+      <DependentUpon>DashboardKitchenManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="restoreSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restoreSystem.Designer.cs">
+      <DependentUpon>restoreSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchForCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchForCustomer.Designer.cs">
+      <DependentUpon>searchForCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendOrdercsToKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendOrdercsToKitchen.Designer.cs">
+      <DependentUpon>sendOrdercsToKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setUpMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setUpMenu.Designer.cs">
+      <DependentUpon>setUpMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewBannedCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBannedCustomer.Designer.cs">
+      <DependentUpon>viewBannedCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewEmployeeList.Designer.cs">
+      <DependentUpon>viewEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewInventory.Designer.cs">
+      <DependentUpon>viewInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewItem.Designer.cs">
+      <DependentUpon>viewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewListOfBannedCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewListOfBannedCustomers.Designer.cs">
+      <DependentUpon>viewListOfBannedCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewOccupancyRateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewOccupancyRateReport.Designer.cs">
+      <DependentUpon>viewOccupancyRateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewOrderInKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewOrderInKitchen.Designer.cs">
+      <DependentUpon>viewOrderInKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewRooms.Designer.cs">
+      <DependentUpon>viewRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRoomsToClean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRoomsToClean.Designer.cs">
+      <DependentUpon>ViewRoomsToClean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSpecialOffers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSpecialOffers.Designer.cs">
+      <DependentUpon>ViewSpecialOffers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewStock.Designer.cs">
+      <DependentUpon>viewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStockOrder.designer.cs">
+      <DependentUpon>ViewStockOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewSuppliers.Designer.cs">
+      <DependentUpon>viewSuppliers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addBooking.resx">
+      <DependentUpon>addBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addCustomerToBannedList.resx">
+      <DependentUpon>addCustomerToBannedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addEmployee.resx">
+      <DependentUpon>addEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addItemToInventory.resx">
+      <DependentUpon>addItemToInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addRoom.resx">
+      <DependentUpon>addRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoomToHousekeeping.resx">
+      <DependentUpon>AddRoomToHousekeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStaff.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>addStaff.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSupplier.resx">
+      <DependentUpon>addSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billCustomer.resx">
+      <DependentUpon>billCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingList.resx">
+      <DependentUpon>BookingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashUp.resx">
+      <DependentUpon>cashUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeRoomPrice.resx">
+      <DependentUpon>changeRoomPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkIn.resx">
+      <DependentUpon>checkIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkOut.resx">
+      <DependentUpon>checkOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChelseaHotel_ManagementSystem.addSupplier.resources" />
+    <EmbeddedResource Include="addBackup.resx">
+      <DependentUpon>addBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addBreakfastInBedOrder.resx">
+      <DependentUpon>addBreakfastInBedOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addDish.resx">
+      <DependentUpon>addDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSpecialOffer.resx">
+      <DependentUpon>addSpecialOffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStockOrder.resx">
+      <DependentUpon>addStockOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeUser.resx">
+      <DependentUpon>removeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateInventory.resx">
+      <DependentUpon>updateInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewEmployeeDetails.resx">
+      <DependentUpon>viewEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewListOfAvailableRooms.resx">
+      <DependentUpon>viewListOfAvailableRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editStockOrder.resx">
+      <DependentUpon>editStockOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editSupplier.resx">
+      <DependentUpon>editSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editUser.resx">
+      <DependentUpon>editUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getReport.resx">
+      <DependentUpon>getReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeftMenu.resx">
+      <DependentUpon>LeftMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainContainer.resx">
+      <DependentUpon>mainContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRooms.resx">
+      <DependentUpon>ManageRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStock.resx">
+      <DependentUpon>ManageStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSuppliers.resx">
+      <DependentUpon>ManageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardGeneralManager.resx">
+      <DependentUpon>DashboardGeneralManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCancelBooking.resx">
+      <DependentUpon>editCancelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editDeleteMenuItem.resx">
+      <DependentUpon>editDeleteMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyEmplyeeDetails.resx">
+      <DependentUpon>ModifyEmplyeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintStokOrder.resx">
+      <DependentUpon>PrintStokOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receiveOrder.resx">
+      <DependentUpon>receiveOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardReceptionist.resx">
+      <DependentUpon>DashboardReceptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeBackup.resx">
+      <DependentUpon>removeBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardKitchenManager.resx">
+      <DependentUpon>DashboardKitchenManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restoreSystem.resx">
+      <DependentUpon>restoreSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchForCustomer.resx">
+      <DependentUpon>searchForCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendOrdercsToKitchen.resx">
+      <DependentUpon>sendOrdercsToKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setUpMenu.resx">
+      <DependentUpon>setUpMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBannedCustomer.resx">
+      <DependentUpon>viewBannedCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewEmployeeList.resx">
+      <DependentUpon>viewEmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewInventory.resx">
+      <DependentUpon>viewInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewItem.resx">
+      <DependentUpon>viewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewListOfBannedCustomers.resx">
+      <DependentUpon>viewListOfBannedCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewOccupancyRateReport.resx">
+      <DependentUpon>viewOccupancyRateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewOrderInKitchen.resx">
+      <DependentUpon>viewOrderInKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewRooms.resx">
+      <DependentUpon>viewRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRoomsToClean.resx">
+      <DependentUpon>ViewRoomsToClean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSpecialOffers.resx">
+      <DependentUpon>ViewSpecialOffers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewStock.resx">
+      <DependentUpon>viewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStockOrder.resx">
+      <DependentUpon>ViewStockOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewSuppliers.resx">
+      <DependentUpon>viewSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DataAccessLayer.DataLayer.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Raleway-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilePhoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{4f7c5772-5eea-4bdb-8f52-342ca7e77009}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{96C0D51F-CE3E-4B39-837E-2A0134F304BB}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{FC855616-F49A-47D9-B480-987BDD533AEC}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limerick.jpg" />
+    <None Include="Resources\HomeLogo.jpg" />
+    <Content Include="Resources\Icons\png\add-1.png" />
+    <Content Include="Resources\Icons\png\add-2.png" />
+    <Content Include="Resources\Icons\png\add.png" />
+    <Content Include="Resources\Icons\png\agenda.png" />
+    <Content Include="Resources\Icons\png\alarm.png" />
+    <Content Include="Resources\Icons\png\app.png" />
+    <Content Include="Resources\Icons\png\archive-2.png" />
+    <Content Include="Resources\Icons\png\archive.png" />
+    <Content Include="Resources\Icons\png\attachment.png" />
+    <Content Include="Resources\Icons\png\battery-1.png" />
+    <Content Include="Resources\Icons\png\battery-2.png" />
+    <Content Include="Resources\Icons\png\battery-3.png" />
+    <Content Include="Resources\Icons\png\battery-4.png" />
+    <Content Include="Resources\Icons\png\battery-6.png" />
+    <Content Include="Resources\Icons\png\battery-9.png" />
+    <Content Include="Resources\Icons\png\blueprint.png" />
+    <Content Include="Resources\Icons\png\bluetooth.png" />
+    <Content Include="Resources\Icons\png\bookmark-1.png" />
+    <Content Include="Resources\Icons\png\briefcase.png" />
+    <Content Include="Resources\Icons\png\broken-link.png" />
+    <Content Include="Resources\Icons\png\calendar-1.png" />
+    <Content Include="Resources\Icons\png\calendar-3.png" />
+    <Content Include="Resources\Icons\png\calendar-5.png" />
+    <Content Include="Resources\Icons\png\calendar-6.png" />
+    <Content Include="Resources\Icons\png\calendar-7.png" />
+    <Content Include="Resources\Icons\png\checked-1.png" />
+    <Content Include="Resources\Icons\png\checked.png" />
+    <Content Include="Resources\Icons\png\clock-1.png" />
+    <Content Include="Resources\Icons\png\clock.png" />
+    <Content Include="Resources\Icons\png\cloud-computing-1.png" />
+    <Content Include="Resources\Icons\png\cloud-computing-2.png" />
+    <Content Include="Resources\Icons\png\cloud-computing-3.png" />
+    <Content Include="Resources\Icons\png\cloud-computing-5.png" />
+    <Content Include="Resources\Icons\png\cloud-computing.png" />
+    <Content Include="Resources\Icons\png\command.png" />
+    <Content Include="Resources\Icons\png\compact-disc-2.png" />
+    <Content Include="Resources\Icons\png\compact-disc.png" />
+    <Content Include="Resources\Icons\png\compass.png" />
+    <Content Include="Resources\Icons\png\controls-1.png" />
+    <Content Include="Resources\Icons\png\controls-2.png" />
+    <Content Include="Resources\Icons\png\controls-5.png" />
+    <Content Include="Resources\Icons\png\controls-6.png" />
+    <Content Include="Resources\Icons\png\controls-7.png" />
+    <Content Include="Resources\Icons\png\controls-8.png" />
+    <Content Include="Resources\Icons\png\controls-9.png" />
+    <Content Include="Resources\Icons\png\database-1.png" />
+    <Content Include="Resources\Icons\png\database-3.png" />
+    <Content Include="Resources\Icons\png\diploma.png" />
+    <Content Include="Resources\Icons\png\dislike-1.png" />
+    <Content Include="Resources\Icons\png\dislike.png" />
+    <Content Include="Resources\Icons\png\divide-1.png" />
+    <Content Include="Resources\Icons\png\division.png" />
+    <Content Include="Resources\Icons\png\edit-1.png" />
+    <Content Include="Resources\Icons\png\edit.png" />
+    <Content Include="Resources\Icons\png\eject.png" />
+    <Content Include="Resources\Icons\png\equal-1.png" />
+    <Content Include="Resources\Icons\png\equal.png" />
+    <Content Include="Resources\Icons\png\exit-1.png" />
+    <Content Include="Resources\Icons\png\exit.png" />
+    <Content Include="Resources\Icons\png\eyeglasses.png" />
+    <Content Include="Resources\Icons\png\fast-forward-1.png" />
+    <Content Include="Resources\Icons\png\fast-forward.png" />
+    <Content Include="Resources\Icons\png\file-1.png" />
+    <Content Include="Resources\Icons\png\file-2.png" />
+    <Content Include="Resources\Icons\png\file.png" />
+    <Content Include="Resources\Icons\png\film.png" />
+    <Content Include="Resources\Icons\png\flag-1.png" />
+    <Content Include="Resources\Icons\png\flag-2.png" />
+    <Content Include="Resources\Icons\png\flag-3.png" />
+    <Content Include="Resources\Icons\png\flag.png" />
+    <Content Include="Resources\Icons\png\focus.png" />
+    <Content Include="Resources\Icons\png\folder-10.png" />
+    <Content Include="Resources\Icons\png\folder-11.png" />
+    <Content Include="Resources\Icons\png\folder-12.png" />
+    <Content Include="Resources\Icons\png\folder-13.png" />
+    <Content Include="Resources\Icons\png\folder-14.png" />
+    <Content Include="Resources\Icons\png\folder-15.png" />
+    <Content Include="Resources\Icons\png\folder-17.png" />
+    <Content Include="Resources\Icons\png\folder-18.png" />
+    <Content Include="Resources\Icons\png\folder-19.png" />
+    <Content Include="Resources\Icons\png\folder-2.png" />
+    <Content Include="Resources\Icons\png\folder-3.png" />
+    <Content Include="Resources\Icons\png\folder-6.png" />
+    <Content Include="Resources\Icons\png\folder-7.png" />
+    <Content Include="Resources\Icons\png\folder-8.png" />
+    <Content Include="Resources\Icons\png\folder-9.png" />
+    <Content Include="Resources\Icons\png\folder.png" />
+    <Content Include="Resources\Icons\png\forbidden.png" />
+    <Content Include="Resources\Icons\png\funnel.png" />
+    <Content Include="Resources\Icons\png\garbage-2.png" />
+    <Content Include="Resources\Icons\png\garbage.png" />
+    <Content Include="Resources\Icons\png\gift.png" />
+    <Content Include="Resources\Icons\png\help.png" />
+    <Content Include="Resources\Icons\png\hide.png" />
+    <Content Include="Resources\Icons\png\home-1.png" />
+    <Content Include="Resources\Icons\png\home-2.png" />
+    <Content Include="Resources\Icons\png\hourglass-2.png" />
+    <Content Include="Resources\Icons\png\house.png" />
+    <Content Include="Resources\Icons\png\id-card-1.png" />
+    <Content Include="Resources\Icons\png\id-card-3.png" />
+    <Content Include="Resources\Icons\png\id-card-4.png" />
+    <Content Include="Resources\Icons\png\id-card-5.png" />
+    <Content Include="Resources\Icons\png\id-card.png" />
+    <Content Include="Resources\Icons\png\incoming.png" />
+    <Content Include="Resources\Icons\png\infinity.png" />
+    <Content Include="Resources\Icons\png\info.png" />
+    <Content Include="Resources\Icons\png\key.png" />
+    <Content Include="Resources\Icons\png\lamp.png" />
+    <Content Include="Resources\Icons\png\layers-1.png" />
+    <Content Include="Resources\Icons\png\layers.png" />
+    <Content Include="Resources\Icons\png\lock.png" />
+    <Content Include="Resources\Icons\png\locked-1.png" />
+    <Content Include="Resources\Icons\png\locked-3.png" />
+    <Content Include="Resources\Icons\png\locked-4.png" />
+    <Content Include="Resources\Icons\png\locked-5.png" />
+    <Content Include="Resources\Icons\png\locked-6.png" />
+    <Content Include="Resources\Icons\png\locked.png" />
+    <Content Include="Resources\Icons\png\login.png" />
+    <Content Include="Resources\Icons\png\magic-wand.png" />
+    <Content Include="Resources\Icons\png\magnet-2.png" />
+    <Content Include="Resources\Icons\png\magnet.png" />
+    <Content Include="Resources\Icons\png\map-location.png" />
+    <Content Include="Resources\Icons\png\megaphone.png" />
+    <Content Include="Resources\Icons\png\menu-1.png" />
+    <Content Include="Resources\Icons\png\menu-2.png" />
+    <Content Include="Resources\Icons\png\menu-4.png" />
+    <Content Include="Resources\Icons\png\menu.png" />
+    <Content Include="Resources\Icons\png\microphone-1.png" />
+    <Content Include="Resources\Icons\png\more-1.png" />
+    <Content Include="Resources\Icons\png\more-2.png" />
+    <Content Include="Resources\Icons\png\more.png" />
+    <Content Include="Resources\Icons\png\multiply-1.png" />
+    <Content Include="Resources\Icons\png\multiply.png" />
+    <Content Include="Resources\Icons\png\music-player-1.png" />
+    <Content Include="Resources\Icons\png\music-player-2.png" />
+    <Content Include="Resources\Icons\png\music-player.png" />
+    <Content Include="Resources\Icons\png\mute.png" />
+    <Content Include="Resources\Icons\png\navigation-1.png" />
+    <Content Include="Resources\Icons\png\navigation.png" />
+    <Content Include="Resources\Icons\png\network.png" />
+    <Content Include="Resources\Icons\png\newspaper.png" />
+    <Content Include="Resources\Icons\png\next.png" />
+    <Content Include="Resources\Icons\png\notebook-1.png" />
+    <Content Include="Resources\Icons\png\notebook-2.png" />
+    <Content Include="Resources\Icons\png\notebook.png" />
+    <Content Include="Resources\Icons\png\notepad-1.png" />
+    <Content Include="Resources\Icons\png\notepad-2.png" />
+    <Content Include="Resources\Icons\png\notepad.png" />
+    <Content Include="Resources\Icons\png\paper-plane.png" />
+    <Content Include="Resources\Icons\png\pause-1.png" />
+    <Content Include="Resources\Icons\png\pause.png" />
+    <Content Include="Resources\Icons\png\percent-1.png" />
+    <Content Include="Resources\Icons\png\perspective.png" />
+    <Content Include="Resources\Icons\png\photo-camera-1.png" />
+    <Content Include="Resources\Icons\png\photo-camera.png" />
+    <Content Include="Resources\Icons\png\photos.png" />
+    <Content Include="Resources\Icons\png\picture-1.png" />
+    <Content Include="Resources\Icons\png\picture-2.png" />
+    <Content Include="Resources\Icons\png\picture.png" />
+    <Content Include="Resources\Icons\png\pin.png" />
+    <Content Include="Resources\Icons\png\placeholder-1.png" />
+    <Content Include="Resources\Icons\png\placeholder-2.png" />
+    <Content Include="Resources\Icons\png\placeholder-3.png" />
+    <Content Include="Resources\Icons\png\placeholder.png" />
+    <Content Include="Resources\Icons\png\placeholders.png" />
+    <Content Include="Resources\Icons\png\play-button-1.png" />
+    <Content Include="Resources\Icons\png\play-button.png" />
+    <Content Include="Resources\Icons\png\plus.png" />
+    <Content Include="Resources\Icons\png\power.png" />
+    <Content Include="Resources\Icons\png\previous.png" />
+    <Content Include="Resources\Icons\png\print.png" />
+    <Content Include="Resources\Icons\png\push-pin.png" />
+    <Content Include="Resources\Icons\png\radar.png" />
+    <Content Include="Resources\Icons\png\repeat-1.png" />
+    <Content Include="Resources\Icons\png\restart.png" />
+    <Content Include="Resources\Icons\png\resume.png" />
+    <Content Include="Resources\Icons\png\rewind-1.png" />
+    <Content Include="Resources\Icons\png\rewind.png" />
+    <Content Include="Resources\Icons\png\route.png" />
+    <Content Include="Resources\Icons\png\save.png" />
+    <Content Include="Resources\Icons\png\search-1.png" />
+    <Content Include="Resources\Icons\png\search.png" />
+    <Content Include="Resources\Icons\png\send.png" />
+    <Content Include="Resources\Icons\png\server-1.png" />
+    <Content Include="Resources\Icons\png\server-3.png" />
+    <Content Include="Resources\Icons\png\server.png" />
+    <Content Include="Resources\Icons\png\settings-3.png" />
+    <Content Include="Resources\Icons\png\settings-4.png" />
+    <Content Include="Resources\Icons\png\settings-5.png" />
+    <Content Include="Resources\Icons\png\settings-6.png" />
+    <Content Include="Resources\Icons\png\settings-7.png" />
+    <Content Include="Resources\Icons\png\settings-9.png" />
+    <Content Include="Resources\Icons\png\settings.png" />
+    <Content Include="Resources\Icons\png\share.png" />
+    <Content Include="Resources\Icons\png\shutdown.png" />
+    <Content Include="Resources\Icons\png\sign-1.png" />
+    <Content Include="Resources\Icons\png\skip.png" />
+    <Content Include="Resources\Icons\png\smartphone-1.png" />
+    <Content Include="Resources\Icons\png\smartphone-11.png" />
+    <Content Include="Resources\Icons\png\smartphone-7.png" />
+    <Content Include="Resources\Icons\png\smartphone-9.png" />
+    <Content Include="Resources\Icons\png\smartphone.png" />
+    <Content Include="Resources\Icons\png\speaker-2.png" />
+    <Content Include="Resources\Icons\png\speaker-3.png" />
+    <Content Include="Resources\Icons\png\speaker-4.png" />
+    <Content Include="Resources\Icons\png\speaker-5.png" />
+    <Content Include="Resources\Icons\png\speaker-7.png" />
+    <Content Include="Resources\Icons\png\speaker.png" />
+    <Content Include="Resources\Icons\png\spotlight.png" />
+    <Content Include="Resources\Icons\png\star-1.png" />
+    <Content Include="Resources\Icons\png\star.png" />
+    <Content Include="Resources\Icons\png\stop-1.png" />
+    <Content Include="Resources\Icons\png\stopwatch-1.png" />
+    <Content Include="Resources\Icons\png\stopwatch-3.png" />
+    <Content Include="Resources\Icons\png\stopwatch-4.png" />
+    <Content Include="Resources\Icons\png\street-1.png" />
+    <Content Include="Resources\Icons\png\street.png" />
+    <Content Include="Resources\Icons\png\substract-1.png" />
+    <Content Include="Resources\Icons\png\substract.png" />
+    <Content Include="Resources\Icons\png\success.png" />
+    <Content Include="Resources\Icons\png\switch-4.png" />
+    <Content Include="Resources\Icons\png\switch-5.png" />
+    <Content Include="Resources\Icons\png\switch-6.png" />
+    <Content Include="Resources\Icons\png\switch-7.png" />
+    <Content Include="Resources\Icons\png\switch.png" />
+    <Content Include="Resources\Icons\png\tabs-1.png" />
+    <Content Include="Resources\Icons\png\tabs.png" />
+    <Content Include="Resources\Icons\png\target.png" />
+    <Content Include="Resources\Icons\png\television-1.png" />
+    <Content Include="Resources\Icons\png\television.png" />
+    <Content Include="Resources\Icons\png\trash.png" />
+    <Content Include="Resources\Icons\png\unlink.png" />
+    <Content Include="Resources\Icons\png\unlocked-1.png" />
+    <Content Include="Resources\Icons\png\unlocked-2.png" />
+    <Content Include="Resources\Icons\png\unlocked.png" />
+    <Content Include="Resources\Icons\png\user-1.png" />
+    <Content Include="Resources\Icons\png\user-2.png" />
+    <Content Include="Resources\Icons\png\user-3.png" />
+    <Content Include="Resources\Icons\png\user-4.png" />
+    <Content Include="Resources\Icons\png\user-5.png" />
+    <Content Include="Resources\Icons\png\user-6.png" />
+    <Content Include="Resources\Icons\png\user-7.png" />
+    <Content Include="Resources\Icons\png\user.png" />
+    <Content Include="Resources\Icons\png\users-1.png" />
+    <Content Include="Resources\Icons\png\video-camera.png" />
+    <Content Include="Resources\Icons\png\video-player-1.png" />
+    <Content Include="Resources\Icons\png\video-player-2.png" />
+    <Content Include="Resources\Icons\png\video-player.png" />
+    <Content Include="Resources\Icons\png\view-2.png" />
+    <Content Include="Resources\Icons\png\view.png" />
+    <Content Include="Resources\Icons\png\volume-control-1.png" />
+    <Content Include="Resources\Icons\png\warning.png" />
+    <Content Include="Resources\Icons\png\wifi-1.png" />
+    <Content Include="Resources\Icons\png\windows-2.png" />
+    <Content Include="Resources\Icons\png\windows-3.png" />
+    <Content Include="Resources\Icons\png\windows-4.png" />
+    <Content Include="Resources\Icons\png\windows.png" />
+    <Content Include="Resources\Icons\png\worldwide-1.png" />
+    <Content Include="Resources\Icons\png\zoom-in.png" />
+    <Content Include="Resources\Icons\png\zoom-out.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

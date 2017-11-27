@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChelseaHotel_ManagementSystem", "ChelseaHotel_ManagementSystem\ChelseaHotel_ManagementSystem.csproj", "{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FC855616-F49A-47D9-B480-987BDD533AEC} = {FC855616-F49A-47D9-B480-987BDD533AEC}
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB} = {96C0D51F-CE3E-4B39-837E-2A0134F304BB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessEntities", "BusinessEntities\BusinessEntities.csproj", "{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{96C0D51F-CE3E-4B39-837E-2A0134F304BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{FC855616-F49A-47D9-B480-987BDD533AEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A7B094D-F156-49D4-9AE6-3403ABD2B5AD}.Release|x86.Build.0 = Release|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Debug|x86.Build.0 = Debug|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F7C5772-5EEA-4BDB-8F52-342CA7E77009}.Release|x86.Build.0 = Release|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Debug|x86.Build.0 = Debug|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{96C0D51F-CE3E-4B39-837E-2A0134F304BB}.Release|x86.Build.0 = Release|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC855616-F49A-47D9-B480-987BDD533AEC}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lit-alpha-coders.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ChelseaHotel_ManagementSystem\\ChelseaHotel_ManagementSystem.csproj
+		SccProjectName1 = ChelseaHotel_ManagementSystem
+		SccLocalPath1 = ChelseaHotel_ManagementSystem
+		SccProjectUniqueName2 = BusinessEntities\\BusinessEntities.csproj
+		SccProjectName2 = BusinessEntities
+		SccLocalPath2 = BusinessEntities
+		SccProjectUniqueName3 = BusinessLayer\\BusinessLayer.csproj
+		SccProjectName3 = BusinessLayer
+		SccLocalPath3 = BusinessLayer
+		SccProjectUniqueName4 = DataAccessLayer\\DataAccessLayer.csproj
+		SccProjectName4 = DataAccessLayer
+		SccLocalPath4 = DataAccessLayer
+	EndGlobalSection
+EndGlobal
